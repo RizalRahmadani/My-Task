@@ -140,7 +140,7 @@ public class ProfileFragment extends Fragment {
                             .load(imageUrl)
                             .skipMemoryCache(true)
                             .diskCacheStrategy(DiskCacheStrategy.NONE)
-                            .placeholder(R.drawable.icon_profile)
+//                            .placeholder(R.drawable.icon_profile)
                             .error(R.drawable.ic_launcher_background)
                             .into(profileBinding.profileImage);
                 }

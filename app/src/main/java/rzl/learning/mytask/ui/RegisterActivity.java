@@ -92,7 +92,7 @@ public class RegisterActivity extends AppCompatActivity {
                     auth.createUserWithEmailAndPassword(email, password).addOnCompleteListener(task -> {
                         if (task.isSuccessful()) {
                             DatabaseReference mDatabaseRef = mDatabase.getReference().child("users").child(auth.getCurrentUser().getUid());
-                            User users = new User(auth.getCurrentUser().getUid(),name, email,"");
+                            User users = new User(auth.getCurrentUser().getUid(),name, email,"https://firebasestorage.googleapis.com/v0/b/my-task-ee12c.appspot.com/o/profile_images%2Fcats.jpg?alt=media&token=4968e907-f3f7-4dc9-9e1d-02d540c48d28");
                             mDatabaseRef.setValue(users).addOnCompleteListener(task1 -> {
                                 if (task1.isSuccessful()) {
                                     Toast.makeText(RegisterActivity.this, "Register Berhasil", Toast.LENGTH_SHORT).show();
