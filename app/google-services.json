@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "71056507594",
+    "firebase_url": "https://my-task-ee12c-default-rtdb.firebaseio.com",
+    "project_id": "my-task-ee12c",
+    "storage_bucket": "my-task-ee12c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71056507594:android:1055f743168f3a01d82a33",
+        "android_client_info": {
+          "package_name": "rzl.learning.mytask"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71056507594-ramrv889e3aaavc14gob1pdf1i06cj70.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "rzl.learning.mytask",
+            "certificate_hash": "6791c696eec55f02adeebe635321d5e1bcb52bb7"
+          }
+        },
+        {
+          "client_id": "71056507594-3ca5qpm4r0ic5ps7t348tabngrftejk9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAESKed5oKecr9wudm1Fe1cgrTl2bXrbtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "71056507594-3ca5qpm4r0ic5ps7t348tabngrftejk9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

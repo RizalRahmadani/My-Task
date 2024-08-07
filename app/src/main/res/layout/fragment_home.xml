@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ui.HomeFragment">
+
+    <TextView
+        android:id="@+id/tv_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        tools:text="Hello,\nPablo Escobar"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="24sp"
+        android:textColor="@color/black_01"/>
+
+    <ImageButton
+        android:id="@+id/btn_notif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_notif"
+        android:layout_alignParentEnd="true"/>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_cuaca"
+        android:layout_below="@id/tv_hello"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/bacground_cuaca">
+
+            <ImageView
+                android:id="@+id/weather_icon"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/cuaca" />
+
+            <TextView
+                android:id="@+id/temperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/weather_icon"
+                android:layout_marginStart="32dp"
+                android:text="21°"
+                android:textSize="48sp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@id/temperature"
+                android:layout_centerVertical="true"
+                android:orientation="vertical"
+                android:gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                >
+                <TextView
+                    android:id="@+id/weather_condition"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Cloudy"
+                    android:textSize="16sp"
+                    android:textColor="@android:color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday, 08/24"
+                    android:fontFamily="@font/poppins"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"/>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_cuaca"
+        android:fontFamily="@font/poppins_medium"
+        android:text="List Task"
+        android:id="@+id/tv_list"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/blue"
+        android:textSize="16sp" />
+
+
+<!--    LIST EMPTY-->
+    <RelativeLayout
+        android:id="@+id/list_empty"
+        android:layout_below="@id/tv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:layout_marginTop="100dp"
+            android:id="@+id/img_empty"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:visibility="gone"
+           android:layout_centerHorizontal="true"
+            android:src="@drawable/list_kosong"/>
+        <TextView
+            android:id="@+id/tv_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No tasks\nAdd new task to start"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/black_01"
+            android:layout_below="@id/img_empty"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="18sp"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

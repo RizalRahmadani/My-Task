@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My Task</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="default_web_client_id">71056507594-3ca5qpm4r0ic5ps7t348tabngrftejk9.apps.googleusercontent.com</string>
+    <string name="description">Lorem Ipsum is simply dummy text of the printingand typesetting industry. Lorem Ipsum has been th industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</string>
+</resources>

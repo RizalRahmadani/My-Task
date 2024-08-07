@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/icon_app"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo_app" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Register"
+            android:textColor="@color/black_01"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tv_enter_personal_information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins"
+            android:text="Enter Your Personal Information"
+            android:textColor="@color/gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:fontFamily="@font/poppins"
+            android:text="Name"
+            android:textColor="@color/black_01"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edittext_rounded"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter your name"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Email"
+            android:textColor="@color/black_01"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_email"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edittext_rounded"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter your email"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Password"
+            android:textColor="@color/black_01"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edittext_rounded"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter password"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/icon_hide_password"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_confirm_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/poppins"
+            android:text="Confirm Password"
+            android:textColor="@color/black_01"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/edt_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_edittext_rounded"
+            android:fontFamily="@font/poppins"
+            android:hint="Enter confirm password"
+            android:inputType="textPassword"
+            android:drawableEnd="@drawable/icon_hide_password"
+            android:padding="14dp"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_edittext_rounded"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/have_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Do you have an account?"
+                android:textColor="@color/black_01"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@+id/have_account"
+                android:fontFamily="@font/poppins_medium"
+                android:text="Log in"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

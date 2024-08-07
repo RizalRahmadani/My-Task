@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".ui.ProfileFragment">
+
+    <TextView
+        android:id="@+id/tv_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:fontFamily="@font/poppins_semibold"
+        android:textSize="24sp"
+        android:textColor="@color/black_01"
+        android:gravity="center_horizontal"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_below="@id/tv_profile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:id="@+id/profile_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        tools:src="@drawable/pablo"
+        android:layout_gravity="center"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_edit_image"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignEnd="@+id/profile_image"
+        android:layout_alignBottom="@+id/profile_image"
+        android:background="@drawable/icon_edit" />
+
+
+    <TextView
+        android:layout_below="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/tv_profile_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Pablo Escobar"
+        android:textColor="@color/black_01"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:layout_gravity="center"
+       />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="32dp"
+        android:layout_below="@id/tv_profile_name"
+        android:id="@+id/btn_edit_profile"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black_01"
+        app:cornerRadius="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Edit Profile"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:icon="@drawable/icon_edit_profile"
+        app:iconGravity="start"
+        app:iconTint="@null"
+        app:iconSize="24dp"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/arrow_next"
+        android:gravity="start|center_vertical"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/btn_edit_profile"
+        android:id="@+id/btn_change_password"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black_01"
+        app:cornerRadius="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Change password"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:icon="@drawable/baseline_lock_24"
+        app:iconGravity="start"
+        app:iconTint="#319F43"
+        app:iconSize="32dp"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/arrow_next"
+        android:gravity="start|center_vertical"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/btn_change_password"
+        android:id="@+id/btn_settings"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black_01"
+        app:cornerRadius="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Settings"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:icon="@drawable/icon_change_settings"
+        app:iconGravity="start"
+        app:iconTint="@null"
+        app:iconSize="24dp"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/arrow_next"
+        android:gravity="start|center_vertical"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_marginTop="8dp"
+        android:layout_below="@id/btn_settings"
+        android:id="@+id/btn_logout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black_01"
+        app:cornerRadius="10dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Logout"
+        android:textAllCaps="false"
+        android:textSize="14sp"
+        app:icon="@drawable/icon_logout"
+        app:iconGravity="start"
+        app:iconTint="@null"
+        app:iconSize="24dp"
+        android:drawablePadding="8dp"
+        android:drawableEnd="@drawable/arrow_next"
+        android:gravity="start|center_vertical"/>
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>
